@@ -9,23 +9,39 @@ body {
     background-color: black;
     width: 100vw;
     height: 100vh;
+    padding: 2% 15%;
 }
 
 .page-container {
-    width: 80%;
-    height: 95%;
     background-color: white;
-    margin: 1% auto 0 auto;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
-.main {
-    padding: 25px;
-    background-color: white;
-    border: 5px solid rgb(15, 15, 15);
-    border-radius: 12.5px 50px;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
+.top-container {
+    background: url(../images/logo.jpg) no-repeat center;
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+
+.menu-navigation {
+    float: left;
+    position: absolute;
+    width: 40%;
+    margin-top: 12.5%;
+    margin-bottom: 12.5%;
+    margin-left: 1%;
+}
+
+.navigation {
+    width: 100%;
 }
 
 .hidden {
