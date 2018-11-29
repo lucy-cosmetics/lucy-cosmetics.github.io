@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	display: none;
+	color: rgb(15, 15, 15);
+    background-color: rgb(145, 145, 145);
+    height: 100vh;
+    padding: 8px;
+    
+}
+
+.titleImg {
+	height: 100px;
+    width: 75px;
+}
+
+.main {
+    padding: 25px;
+    background-color: white;
+    border: 5px solid rgb(15, 15, 15);
+    border-radius: 12.5px 50px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.table-wrapper {
+    background-color: rgb(145, 145, 145);    
+    border-radius: 5px;
+    margin: 8px 0;
+    padding: 4px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.table {
+    width: 100%;
+    overflow: auto;
+    //background-color: rgba(154, 255, 173, 0.24);
+}
+
+.kocicak {
+    background-color: white;
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+    flex-flow: column;
+}
+
+.kocicak ~ .kocicak {
+    margin-top: 8px;
+}
+
+.titulna-fotka {
+    height: 150px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: white;
+    box-shadow: 5px 5px 2px rgba(66,66,66,0.8);
+}
+
+.meno ~ .obsah{
+    margin: 8px 0;
+}
+
+.obsah {
+    display: flex;
+}
+
+.popis {
+    margin-left: 8px;
+}
