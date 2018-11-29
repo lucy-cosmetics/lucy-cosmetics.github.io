@@ -5,15 +5,17 @@
 }
 
 body {
-	display: none;
-	color: rgb(15, 15, 15);
-    background-color: rgb(145, 145, 145);
+	color: black;
+    background-color: black;
+    width: 100vw;
     height: 100vh;
-    padding: 8px;
 }
 
-.body {
-	
+.page-container {
+    width: 80%;
+    height: 95%;
+    background-color: white;
+    margin: 1% auto 0 auto;
 }
 
 .main {
