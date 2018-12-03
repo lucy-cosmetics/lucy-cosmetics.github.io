@@ -10,6 +10,7 @@ lekárska kozmetika Alpha-H.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/init.js"></script>
         <title>Lucy Cosmetics</title>
     </head>
 <body>
@@ -19,29 +20,29 @@ lekárska kozmetika Alpha-H.">
                 <nav>
                     <ul>
                         <li>
-                            <a href="index.html">
-                                <img src="images/ruz.svg" alt="O nás" id="o_nas" class="navigation">
-                            </a>
+                            <div class="clickable" onclick="otvorMenu(0)">
+                                <span class="lipstick-text uvod otvoreny">O nás</span>
+                            </div>
                         </li>
                         <li>
-                            <a href="sluzby.html">
-                                <img src="images/ruz-zatvoreny.svg" alt="Služby" id="sluzby" class="navigation">
-                            </a>
+                            <div class="clickable" onclick="otvorMenu(1)">
+                                <span class="lipstick-text sluzby">Služby</span>
+                            </div>
                         </li>
                         <li>
-                            <a href="cennik.html">
-                                <img src="images/cennik.png" alt="Cenník" id="cennik" class="navigation">
-                            </a>
+                            <div class="clickable" onclick="otvorMenu(2)">
+                                <span class="lipstick-text cennik">Cenník</span>
+                            </div>
                         </li>
                         <li>
-                            <a href="galeria.html">
-                                <img src="images/galeria.png" alt="Galéria" id="galeria" class="navigation">
-                            </a>
+                            <div class="clickable" onclick="otvorMenu(3)">
+                                <span class="lipstick-text galeria">Galéria</span>
+                            </div>
                         </li>
                         <li>
-                            <a href="kontakt.html">
-                                <img src="images/kontakt.png" alt="Kontakt" id="kontakt" class="navigation">
-                            </a>
+                            <div class="clickable" onclick="otvorMenu(4)">
+                                <span class="lipstick-text kontakt">Kontakt</span>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -49,6 +50,44 @@ lekárska kozmetika Alpha-H.">
         </div>
         <h1>This is a Heading</h1>
         <p>This is a paragraph.</p>
+    </div>
+    <div class="hidden">
+        <!-- obrázok rúž otvorený -->
+        <div id="ruz"><svg version="1.1" id="ruz-svg" class="navigation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 174 49" style="enable-background:new 0 0 174 49;" xml:space="preserve" width="175" height="50">
+              <style type="text/css">
+                  .farba{fill:black;}
+              </style>
+
+               <path class="farba" d="M2 0 V40 H75 V0 H0 Z"></path>
+               <path class="farba" d="M2 45 V50 H75 V45 H0 Z"></path>
+               <path class="farba" d="M3 0 V50 Q0 50 0 45 V5 Q0 0 3 0 Z"></path>
+
+               <path class="farba" d="M75 3 V47 H79 V3 Z"></path>
+
+               <path class="farba" d="M78 10 V33 H125 V10 Z"></path>
+               <path class="farba" d="M78 36 V40 H125 V36 Z"></path>
+               <path class="farba" d="M124 10 V40 H125 V10 Z"></path>
+
+               <path class="farba" d="M125 13 V37 H150 Q175 35 175 28 L150 13 Z"></path>
+
+            </svg></div>
+        
+        <!-- obrázok rúž zatvorený -->
+        <div id="ruz-zatvoreny"><svg version="1.1" id="ruz-zatvoreny-svg" class="navigation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 174 49" style="enable-background:new 0 0 174 49;" xml:space="preserve" width="175" height="50">
+              <style type="text/css">
+                  .farba{fill:black;}
+              </style>
+
+               <path class="farba" d="M2 0 V40 H75 V0 H0 Z"></path>
+               <path class="farba" d="M2 45 V50 H75 V45 H0 Z"></path>
+               <path class="farba" d="M3 0 V50 Q0 50 0 45 V5 Q0 0 3 0 Z"></path>
+
+               <path class="farba" d="M75 3 V47 H79 V3 Z"></path>
+
+               <path class="farba" d="M78 0 H160 Q175 0 175 25 Q175 50 160 50 H78 V45 H162  Q168 45 170 40 H78 Z"></path>
+
+            </svg></div>
     </div>
 </body>
 </html> 
