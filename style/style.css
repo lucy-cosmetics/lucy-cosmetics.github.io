@@ -10,6 +10,7 @@ body {
     width: 100vw;
     height: 100vh;
     min-height: 800px;
+    min-width: 800px;
     padding: 2% 15%;
 }
 
@@ -73,11 +74,41 @@ body {
     fill:#FFB3BA;
 }
 
+.menu-content {
+    display: none;
+}
+
+.vlavo {
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+}
+
+.vpravo {
+    float: right;
+    width: 50%;
+}
+
+.formular input, .formular textarea {
+    width: 300px;
+}
+
+textarea {
+    resize: none;
+}
+
 .clickable {
     cursor: pointer;
+}
+
+.shown {
+    display: block;
 }
 
 .hidden {
     display: none;
 }
 
+.red {
+    color: red;
+}
