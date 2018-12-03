@@ -1,0 +1,18 @@
+<svg width="175" height="50">
+  <style type="text/css">
+      .farba{fill:black;}
+  </style>
+
+   <path class="farba" d="M2 0 V40 H75 V0 H0 Z"></path>
+   <path class="farba" d="M2 45 V50 H75 V45 H0 Z"></path>
+   <path class="farba" d="M3 0 V50 Q0 50 0 45 V5 Q0 0 3 0 Z"></path>
+
+   <path class="farba" d="M75 3 V47 H79 V3 Z"></path>
+
+   <path class="farba" d="M78 10 V33 H125 V10 Z"></path>
+   <path class="farba" d="M78 36 V40 H125 V36 Z"></path>
+   <path class="farba" d="M124 10 V40 H125 V10 Z"></path>
+
+   <path class="farba" d="M125 13 V37 H150 Q175 35 175 28 L150 13 Z"></path>
+
+</svg> 
