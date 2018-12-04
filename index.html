@@ -12,6 +12,13 @@ lekárska kozmetika Alpha-H.">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/init.js"></script>
         <title>Lucy Cosmetics</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+        <!-- Musí byť až po nalinkovaní Leaflet's CSS -->
+         <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+           integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+           crossorigin=""></script>
     </head>
 <body>
     <div class='page-container'>
@@ -67,16 +74,13 @@ lekárska kozmetika Alpha-H.">
         <div id="menuContent4" class="menu-content">
             <div class="vlavo">
                 <h1>Kontakt</h1>
-                <p>Lucia Krasňanská Macháčková</p>
-                <p>Salón Karlott - Pezinok - Kollárová 11</p>
-                <p>Tel.: 0911 152 516</p>
+                <p class="pink">Mgr. Lucia Krasňanská Macháčková</p>
+                <br>
+                <p>Mobil: 0911 152 516</p>
                 <p>Email: lc.lucycosmetics@gmail.com</p>
-                <br/>
-                <p>V salóne sa nachádza aj kaderníctvo</p>
-                <p>Zuzana Kutnerová</p>
-                <p>Tel.: 0905 380 449</p>
-                <p>Anna Petreková</p>
-                <p>Tel.: 0908 497 134</p>
+                <br>
+                <p class="pink">Adresa: Kollárova 11, 902 01 Pezinok (KARLOTT)</p>
+                <div id="map"></div>
             </div>
             <div class="vpravo">
                 <h1>Formulár</h1>

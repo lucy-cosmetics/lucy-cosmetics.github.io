@@ -97,6 +97,12 @@ textarea {
     resize: none;
 }
 
+#map {
+    width: 300px;
+    height: 200px;
+    background-color: grey;
+}
+
 .clickable {
     cursor: pointer;
 }
@@ -111,4 +117,8 @@ textarea {
 
 .red {
     color: red;
+}
+
+.pink {
+    color: deeppink;
 }

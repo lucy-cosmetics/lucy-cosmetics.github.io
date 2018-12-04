@@ -8,6 +8,8 @@ $(document).ready(function () {
             navigacia[i].parentElement.append($.parseHTML(ruzElementVisible)[0]);
         }          
     }
+    
+    nastavMapu();
 });
 
 function otvorMenu(menuId) {
@@ -40,7 +42,40 @@ function otvorMenu(menuId) {
                 }
                 navigacia[i].parentElement.append($.parseHTML(ruzElementVisible)[0]);                
             }
+            
+            if (menuId === 4) {
+                nastavMapu(true);
+            }
         }          
     }
     
+}
+
+var mapa = null;
+
+function nastavMapu(skipInitialization) {
+    
+    if (!mapa) {
+        mapa = L.map('map');       
+    }
+    
+    var markery = {
+        "name": "KARLOTT",
+         "lat": 48.2854865,
+         "lng": 17.2690892,
+         "zoom": 17
+    };
+
+    mapa.setView([markery.lat, markery.lng], markery.zoom);
+
+    if (!skipInitialization) {
+        L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(mapa);        
+    }
+    
+    L.marker( [markery.lat, markery.lng] )
+      .bindPopup(markery.name)
+      .addTo( mapa );
+    mapa.invalidateSize();
 }
