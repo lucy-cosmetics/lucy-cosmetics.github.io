@@ -103,8 +103,37 @@ textarea {
     background-color: grey;
 }
 
+.tabulka, .tabulka tr, .tabulka th {
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid #C7C7C7;
+}
+
+.tabulka th {
+    font-weight: normal;
+    background-color: #E4E4E4;
+    padding: 2px 10px;
+}
+
+.tabulka th ~ th {
+    background-color: #F4E3EC;
+}
+
+.tabulka {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .clickable {
     cursor: pointer;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.leftpadding {
+    padding-left: 10px;
 }
 
 .shown {
@@ -121,4 +150,8 @@ textarea {
 
 .pink {
     color: deeppink;
+}
+
+.pasteldarkblue, .tabulka .pasteldarkblue {
+    background-color: #D5D5D5;
 }
