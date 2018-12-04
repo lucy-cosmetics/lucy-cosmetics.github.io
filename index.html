@@ -84,15 +84,15 @@ lekárska kozmetika Alpha-H.">
             </div>
             <div class="vpravo">
                 <h1>Formulár</h1>
-                <form action="mailto:cosmeticslucy@gmail.com" method="post" enctype="multipart/form-data" class="formular">
+                <form action="https://script.google.com/macros/s/AKfycbykr22iQrJCGY5Zz3sR-7ys_C_tH4MeAt1Q2WlUETQeG80J0T66/exec" method="post" class="formular">
                     <p>Vaše meno:<span class="red">*</span></p>
-                    <input type="text" name="name" required><br>
+                    <input type="text" name="meno" required><br>
                     <p>E-mail:</p>
-                    <input type="text" name="mail"><br>                
+                    <input type="text" name="email"><br>                
                     <p>Telefónne číslo:</p>
-                    <input type="text" name="phone"><br>
+                    <input type="text" name="mobil"><br>
                     <p>Vaša správa:<span class="red">*</span></p>
-                    <textarea rows="10" cols="40" name="message" required></textarea>
+                    <textarea rows="10" cols="40" name="správa" required></textarea>
                     <br><br>
                     <input type="submit" value="Odoslať">
                 </form>
@@ -136,6 +136,16 @@ lekárska kozmetika Alpha-H.">
                <path class="farba" d="M78 0 H160 Q175 0 175 25 Q175 50 160 50 H78 V45 H162  Q168 45 170 40 H78 Z"></path>
 
             </svg></div>
+        <div style="display:none;" id="thankyou_message">
+            <h2><em>Ďakujeme, čoskoro Vás budeme kontaktovať!</em></h2>
+            <!--
+            <br>
+            <form>
+              <input type="button" value="Späť na stránku" onclick="history.back()">
+            </form>
+            -->
+        </div>
     </div>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 </body>
 </html> 
