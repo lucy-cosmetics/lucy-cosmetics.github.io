@@ -89,6 +89,8 @@ body {
 
 .vpravo {
     position: absolute;
+    width: 50%;
+    padding-right: 10px;
     height: 100%;
     display: inline-block;
 }
@@ -104,7 +106,7 @@ body {
 }
 
 .formular input, .formular textarea {
-    width: 300px;
+    width: 100%;
     margin-bottom: 2px;
 }
 
@@ -112,10 +114,30 @@ textarea {
     resize: none;
 }
 
-.form-button {
+.formular .form-button {
     margin-top: auto;
     position: absolute;
     bottom: 14px;
+    width: 338px;
+    width: calc(100% - 10px);
+}
+
+.thankyou_message {
+    -webkit-animation: fadeinout 6s linear forwards;
+    animation: fadeinout 6s linear forwards;
+    text-align: center;
+}
+
+@-webkit-keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    25%,75% { opacity: 1; }
+    100% {display: none;}
+}
+
+@keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    25%,75% { opacity: 1; }
+    100% {display: none;}
 }
 
 #map {
