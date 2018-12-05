@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // nastav ruze v navigacnom menu
     var navigacia = document.getElementsByClassName("lipstick-text");
     if (navigacia) {
         for (var i = 0; i < navigacia.length; i++) {
@@ -8,7 +9,19 @@ $(document).ready(function () {
             $(navigacia[i].parentElement).append($.parseHTML(ruzElementVisible)[0]);
         }          
     }
+
+    // nastav rozbalovaciu sipku v sluzbach
+    var popisy = document.getElementsByClassName("titulok-popisu");
+    if (popisy) {
+        for (var i = 0; i < popisy.length; i++) {
+            var sipka = $(popisy[i]).hasClass("otvoreny") ? "zabalenie" : "rozbalenie";
+            var sipkaElementHidden = document.getElementById(sipka);
+            var sipkaElementVisible = sipkaElementHidden.innerHTML;
+            $(popisy[i]).append($.parseHTML(sipkaElementVisible)[0]);
+        }          
+    }
     
+    // nastav mapu v kontaktoch
     nastavMapu();
 });
 
@@ -49,6 +62,20 @@ function otvorMenu(menuId) {
         }          
     }
     
+}
+
+function preklopPopis(titulokPopisu) {
+    if (titulokPopisu) {
+        $(titulokPopisu).hasClass("otvoreny") ? $(titulokPopisu).removeClass("otvoreny") : $(titulokPopisu).addClass("otvoreny")
+        var sipka = $(titulokPopisu).hasClass("otvoreny") ? "zabalenie" : "rozbalenie";
+        var sipkaElementHidden = document.getElementById(sipka);
+        var sipkaElementVisible = sipkaElementHidden.innerHTML;
+        var oldSipkaSvg = $(titulokPopisu).find(".sipka");
+        if (oldSipkaSvg && oldSipkaSvg.length) {
+            titulokPopisu.removeChild(oldSipkaSvg[0]);
+        }
+        $(titulokPopisu).append($.parseHTML(sipkaElementVisible)[0]);
+    }
 }
 
 var mapa = null;
