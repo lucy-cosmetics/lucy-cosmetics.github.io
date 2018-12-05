@@ -89,11 +89,16 @@
           if (formElements) {
             formElements.style.display = "none"; // hide form
           }
-          enableAllButtons(form);
           var thankYouMessage = form.querySelector(".thankyou_message");
           if (thankYouMessage) {
             thankYouMessage.style.display = "block";
-            setTimeout(function(){ thankYouMessage.style.display = "none"; }, 6000);
+            setTimeout(function(){
+                thankYouMessage.style.display = "none";
+                enableAllButtons(form);
+            }, 6000);
+          }
+          else {
+              enableAllButtons(form);          
           }
           return;
       };
@@ -115,14 +120,14 @@
   document.addEventListener("DOMContentLoaded", loaded, false);
 
   function disableAllButtons(form) {
-    var buttons = form.querySelectorAll("button");
+    var buttons = form.querySelectorAll(".form-button");
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
     }
   }
     
   function enableAllButtons(form) {
-    var buttons = form.querySelectorAll("button");
+    var buttons = form.querySelectorAll(".form-button");
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = false;
     }
