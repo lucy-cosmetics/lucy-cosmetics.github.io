@@ -5,7 +5,7 @@ $(document).ready(function () {
             var ruz = $(navigacia[i]).hasClass("otvoreny") ? "ruz" : "ruz-zatvoreny";
             var ruzElementHidden = document.getElementById(ruz);
             var ruzElementVisible = ruzElementHidden.innerHTML;
-            navigacia[i].parentElement.append($.parseHTML(ruzElementVisible)[0]);
+            $(navigacia[i].parentElement).append($.parseHTML(ruzElementVisible)[0]);
         }          
     }
     
