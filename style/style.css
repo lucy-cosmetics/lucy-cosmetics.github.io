@@ -123,6 +123,14 @@ textarea {
 }
 
 .thankyou_message {
+    position: absolute;
+    width: 338px;
+    width: calc(100% - 10px);    
+    background-color: rgba(255,255,255,0.8);
+    z-index: 1;
+}
+
+.thankyou_message {
     -webkit-animation: fadeinout 6s linear forwards;
     animation: fadeinout 6s linear forwards;
     text-align: center;
@@ -131,13 +139,11 @@ textarea {
 @-webkit-keyframes fadeinout {
     0%,100% { opacity: 0; }
     25%,75% { opacity: 1; }
-    100% {display: none;}
 }
 
 @keyframes fadeinout {
     0%,100% { opacity: 0; }
     25%,75% { opacity: 1; }
-    100% {display: none;}
 }
 
 #map {
