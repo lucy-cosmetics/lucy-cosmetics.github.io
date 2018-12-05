@@ -188,18 +188,20 @@ textarea {
     fill: currentColor;
 }
 
-.titulok-popisu ~ .popis {
+.titulok-popisu + .popis {
     display: none;
 }
 
-
-.titulok-popisu.otvoreny ~ .popis {
+.titulok-popisu.otvoreny + .popis {
     display: block;
 }
 
-.pomlckove-odrazky {
-    margin-left: 10px;
+.prazdne-odrazky {
     list-style-type: none;
+}
+
+.gulickove-odrazky {
+    margin-left: 20px;
 }
 
 .clickable {
