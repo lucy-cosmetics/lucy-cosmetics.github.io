@@ -26,7 +26,7 @@ function otvorMenu(menuId) {
                     if (oldSvg) {
                         navigacia[i].parentElement.removeChild(oldSvg);
                     }
-                    navigacia[i].parentElement.append($.parseHTML(ruzElementVisible)[0]);
+                    $(navigacia[i].parentElement).append($.parseHTML(ruzElementVisible)[0]);
                     $(".menu-content").removeClass("shown");
                     $("#menuContent" + menuId).addClass("shown");
                 }
@@ -40,7 +40,7 @@ function otvorMenu(menuId) {
                 if (oldSvg) {
                     navigacia[i].parentElement.removeChild(oldSvg);
                 }
-                navigacia[i].parentElement.append($.parseHTML(ruzElementVisible)[0]);                
+                $(navigacia[i].parentElement).append($.parseHTML(ruzElementVisible)[0]);                
             }
             
             if (menuId === 4) {
