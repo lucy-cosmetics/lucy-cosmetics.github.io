@@ -69,7 +69,7 @@ function nastavMapu(skipInitialization) {
     mapa.setView([markery.lat, markery.lng], markery.zoom);
 
     if (!skipInitialization) {
-        L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(mapa);        
     
