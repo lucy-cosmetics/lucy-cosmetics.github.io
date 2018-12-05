@@ -7,8 +7,6 @@
 body {
 	color: black;
     background-color: black;
-    width: 100vw;
-    height: 100vh;
     min-height: 800px;
     min-width: 800px;
     padding: 2% 15%;
@@ -26,7 +24,7 @@ body {
 .top-container {
     background: url(../images/logo.jpg) no-repeat center;
     background-size: cover;
-    height: 50%;
+    height: 440px;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -78,15 +76,21 @@ body {
     display: none;
 }
 
+.title-underline {
+    border-bottom: 1px solid black;
+    display: inline-block;
+}
+
 .vlavo {
-    float: left;
     width: 50%;
     padding-left: 10px;
+    display: inline-block;
 }
 
 .vpravo {
     float: right;
     width: 50%;
+    display: inline-block;
 }
 
 .formular input, .formular textarea {
@@ -98,8 +102,9 @@ textarea {
 }
 
 #map {
+    margin-top: 2px;
     width: 300px;
-    height: 200px;
+    height: 193px;
     background-color: grey;
 }
 
@@ -132,8 +137,8 @@ textarea {
     width: 100%;
 }
 
-.leftpadding {
-    padding-left: 10px;
+.leftmargin {
+    margin-left: 10px;
 }
 
 .shown {
