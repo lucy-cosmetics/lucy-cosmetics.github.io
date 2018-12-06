@@ -9,6 +9,7 @@ $(document).ready(function () {
             $(navigacia[i].parentElement).append($.parseHTML(ruzElementVisible)[0]);
         }          
     }
+    $('.menu-navigation').removeClass('hidden');
 
     // nastav rozbalovaciu sipku v sluzbach
     var popisy = document.getElementsByClassName("titulok-popisu");
@@ -144,11 +145,13 @@ function spustiSlideShow(zapnut , skipRefresh) {
 function zobrazFotku(source) {
     var fullscreen = $('.fullscreen');
     if (fullscreen && fullscreen.length && source) {
+        spustiSlideShow(false, true);
         var zvacsenyObrazok = fullscreen.find('img');
         if (zvacsenyObrazok && zvacsenyObrazok.length) {
             $(zvacsenyObrazok).attr('src', source.src);
         }
         fullscreen.removeClass('hidden');
+        $(':focus').blur();
     }
 }
 
@@ -156,5 +159,6 @@ function zatvorFotku() {
     var fullscreen = $('.fullscreen');
     if (fullscreen && fullscreen.length) {
         fullscreen.addClass('hidden');
+        spustiSlideShow(true, true);
     }
 }
