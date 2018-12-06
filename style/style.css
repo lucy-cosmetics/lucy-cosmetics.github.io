@@ -179,15 +179,20 @@ textarea {
 }
 
 .carousel .slick-prev {
-    left: 5px;
+    left: 0px;
     background: url(../images/sipka-vlavo.svg) no-repeat center !important;
     z-index: 3;
+    height: 100%;
+    width: 45px;
 }
 
 .carousel .slick-next {
-    right: 5px;
+    right: 0px;
     background: url(../images/sipka-vpravo.svg) no-repeat center !important;
     z-index: 3;
+    height: 100%;
+    width: 45px;
+
 }
 
 .carousel .slick-next:before, .carousel .slick-prev:before {

@@ -120,18 +120,22 @@ function nastavFotky() {
             centerMode: true,
             centerPadding: '100px',
             slidesToShow: 1,
+            initialSlide: 0,
             autoplay: false,
             autoplaySpeed: 3000,
             adaptiveHeight: true,
             dots: true,
             infinite: true,
             variableWidth: true
-        });        
+        });
     }
 }
 
-function spustiSlideShow(zapnut) {
+function spustiSlideShow(zapnut , skipRefresh) {
         var carousel = $('.carousel');
+        if (!skipRefresh) {
+            $('.carousel')[0].slick.refresh();            
+        }
         if (carousel.length && carousel[0].slick) {
             zapnut ? carousel[0].slick.slickPlay() : carousel[0].slick.slickPause();        
         }
