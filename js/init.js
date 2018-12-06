@@ -140,3 +140,21 @@ function spustiSlideShow(zapnut , skipRefresh) {
             zapnut ? carousel[0].slick.slickPlay() : carousel[0].slick.slickPause();        
         }
 }
+
+function zobrazFotku(source) {
+    var fullscreen = $('.fullscreen');
+    if (fullscreen && fullscreen.length && source) {
+        var zvacsenyObrazok = fullscreen.find('img');
+        if (zvacsenyObrazok && zvacsenyObrazok.length) {
+            $(zvacsenyObrazok).attr('src', source.src);
+        }
+        fullscreen.removeClass('hidden');
+    }
+}
+
+function zatvorFotku() {
+    var fullscreen = $('.fullscreen');
+    if (fullscreen && fullscreen.length) {
+        fullscreen.addClass('hidden');
+    }
+}
