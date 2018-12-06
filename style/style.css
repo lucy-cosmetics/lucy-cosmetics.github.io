@@ -286,6 +286,10 @@ textarea {
     color: deeppink;
 }
 
+.blue {
+    color: deepskyblue;
+}
+
 .pasteldarkblue, .tabulka .pasteldarkblue {
     background-color: #D5D5D5;
 }
