@@ -23,6 +23,10 @@ $(document).ready(function () {
     
     // nastav mapu v kontaktoch
     nastavMapu();
+    
+    // nastav fotky v galerii
+    nastavFotky();
+    spustiSlideShow(false);
 });
 
 function otvorMenu(menuId) {
@@ -59,6 +63,8 @@ function otvorMenu(menuId) {
             if (menuId === 4) {
                 nastavMapu(true);
             }
+            
+            spustiSlideShow(menuId === 3);
         }          
     }
     
@@ -105,4 +111,28 @@ function nastavMapu(skipInitialization) {
           .addTo( mapa );
     }
     mapa.invalidateSize();
+}
+
+function nastavFotky() {
+    var carousel = $('.carousel');
+    if (carousel.length) {
+        carousel.slick({
+            centerMode: true,
+            centerPadding: '100px',
+            slidesToShow: 1,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            adaptiveHeight: true,
+            dots: true,
+            infinite: true,
+            variableWidth: true
+        });        
+    }
+}
+
+function spustiSlideShow(zapnut) {
+        var carousel = $('.carousel');
+        if (carousel.length && carousel[0].slick) {
+            zapnut ? carousel[0].slick.slickPlay() : carousel[0].slick.slickPause();        
+        }
 }
