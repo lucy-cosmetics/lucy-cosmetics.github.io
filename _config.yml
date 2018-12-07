@@ -1,2 +1,36 @@
-plugins:
-  - jekyll-sitemap
+# Site settings
+title: LC - Lucy Cosmetics
+description: "lucy cosmetics vizážistický salón - Lucia Macháčková ( Krasňanská ), 3D Mihalnice ,PMU, vizáž, prístrojové ošetrenie tváre a prírodná australská lekárska kozmetika Alpha-H."
+url: "https://lucy-cosmetics.github.io"
+author:
+  name: "Ivanka a Andrej Hranickí"
+  email: "ado.hranicky@gmail.com"
+
+# Build settings
+baseurl: / # Change this to your relative path (ex: /blog), or leave just a /
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Custom variables
+version: "1.1.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
+
+gems: 
+    - jekyll-sitemap
