@@ -299,6 +299,11 @@ textarea {
     display: none;
 }
 
+.bigger-font {
+    font-size: 1.2rem;
+    text-indent: 2rem;
+}
+
 .red {
     color: red;
 }
