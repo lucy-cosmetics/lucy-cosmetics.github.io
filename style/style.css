@@ -57,24 +57,36 @@ body {
     color:rgb(17, 57, 167);
 }
 
-.uvod + svg .farba {
+.uvod ~ svg .farba {
     fill:#B7DCF4;
 }
 
-.sluzby + svg .farba {
+.sluzby ~ svg .farba {
     fill:#B5EFCE;
 }
 
-.cennik + svg .farba {
+.cennik ~ svg .farba {
     fill:#FFFFBA;
 }
 
-.galeria + svg .farba {
+.galeria ~ svg .farba {
     fill:#F6D3AF;
 }
 
-.kontakt + svg .farba {
+.kontakt ~ svg .farba {
     fill:#FFB3BA;
+}
+
+.lipstick-text ~ .navigation.otvoreny-ruz {
+    display: none;
+}
+
+.lipstick-text.otvoreny ~ .navigation.zatvoreny-ruz {
+    display: none;
+}
+
+.lipstick-text.otvoreny ~ .navigation.otvoreny-ruz {
+    display: inline;
 }
 
 .menu-content {

@@ -1,14 +1,4 @@
 $(document).ready(function () {
-    // nastav ruze v navigacnom menu
-    var navigacia = document.getElementsByClassName("lipstick-text");
-    if (navigacia) {
-        for (var i = 0; i < navigacia.length; i++) {
-            var ruz = $(navigacia[i]).hasClass("otvoreny") ? "ruz" : "ruz-zatvoreny";
-            var ruzElementHidden = document.getElementById(ruz);
-            var ruzElementVisible = ruzElementHidden.innerHTML;
-            $(navigacia[i].parentElement).append($.parseHTML(ruzElementVisible)[0]);
-        }          
-    }
     $('.menu-navigation').removeClass('hidden');
 
     // nastav rozbalovaciu sipku v sluzbach
@@ -31,34 +21,18 @@ $(document).ready(function () {
 });
 
 function otvorMenu(menuId) {
-    let navigacia = document.getElementsByClassName("lipstick-text");
-    if (navigacia) {
-        for(i=0; i < navigacia.length; i++) {
+    var navigacia1 = document.getElementsByClassName("lipstick-text");
+    if (navigacia1) {
+        for(i=0; i < navigacia1.length; i++) {
             if (i === menuId) {
-                if (!$(navigacia[i]).hasClass("otvoreny")) {
-                    $(navigacia[i]).addClass("otvoreny")
-                    var ruz = "ruz";
-                    var ruzElementHidden = document.getElementById(ruz);
-                    var ruzElementVisible = ruzElementHidden.innerHTML;
-                    var oldSvg = navigacia[i].nextElementSibling;
-                    if (oldSvg) {
-                        navigacia[i].parentElement.removeChild(oldSvg);
-                    }
-                    $(navigacia[i].parentElement).append($.parseHTML(ruzElementVisible)[0]);
+                if (!$(navigacia1[i]).hasClass("otvoreny")) {
+                    $(navigacia1[i]).addClass("otvoreny")
                     $(".menu-content").removeClass("shown");
                     $("#menuContent" + menuId).addClass("shown");
                 }
             }
-            else if ($(navigacia[i]).hasClass("otvoreny")) {
-                $(navigacia[i]).removeClass("otvoreny")
-                var ruz = "ruz-zatvoreny";
-                var ruzElementHidden = document.getElementById(ruz);
-                var ruzElementVisible = ruzElementHidden.innerHTML;
-                var oldSvg = navigacia[i].nextElementSibling;
-                if (oldSvg) {
-                    navigacia[i].parentElement.removeChild(oldSvg);
-                }
-                $(navigacia[i].parentElement).append($.parseHTML(ruzElementVisible)[0]);                
+            else if ($(navigacia1[i]).hasClass("otvoreny")) {
+                $(navigacia1[i]).removeClass("otvoreny")
             }
             
             if (menuId === 4) {
