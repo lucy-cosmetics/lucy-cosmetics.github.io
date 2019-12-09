@@ -77,6 +77,10 @@ body {
     fill:#FFB3BA;
 }
 
+.lipstick-text ~ .navigation.zatvoreny-ruz {
+    display: inline;
+}
+
 .lipstick-text ~ .navigation.otvoreny-ruz {
     display: none;
 }
@@ -86,6 +90,22 @@ body {
 }
 
 .lipstick-text.otvoreny ~ .navigation.otvoreny-ruz {
+    display: inline;
+}
+
+.titulok-popisu .sipka.sipka-rozbal {
+    display: inline;
+}
+
+.titulok-popisu .sipka.sipka-zabal {
+    display: none;
+}
+
+.titulok-popisu.otvoreny .sipka.sipka-rozbal {
+    display: none;
+}
+
+.titulok-popisu.otvoreny .sipka.sipka-zabal {
     display: inline;
 }
 
