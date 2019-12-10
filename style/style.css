@@ -488,10 +488,6 @@ textarea {
     }
 
     .thankyou_message {
-        position: absolute;
-        width: 33.8rem;
-        width: calc(100% - 1rem);    
-        background-color: rgba(255,255,255,0.8);
-        z-index: 1;
+        bottom: 1.6rem;
     }
 }
