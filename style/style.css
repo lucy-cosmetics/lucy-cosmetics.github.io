@@ -307,6 +307,10 @@ textarea {
     background-size: 25rem;
 }
 
+.profil ~ p {
+    margin-right: 1rem;
+}
+
 .fullscreen {
     position: fixed;
     top: 0rem;
@@ -373,4 +377,112 @@ textarea {
 
 .pasteldarkblue, .tabulka .pasteldarkblue {
     background-color: #D5D5D5;
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        min-width: 48rem;
+        font-size: 1.6rem;
+    }
+    
+    .page-container {
+        width: calc(100% - 4rem);
+        min-width: 44rem;
+        margin: 2rem auto;
+        border: 0.2rem solid black;
+        border-radius: 1rem;
+    }
+    
+    .top-container {
+        background: url(../images/logo.jpg) no-repeat center;
+        background-size: cover;
+        max-height: 44rem;
+        height: 30rem; 
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        position: relative;
+    }
+    
+    .menu-navigation {
+        width: 11.8rem;
+        bottom: 1rem;
+        margin-left: 1rem;
+    }
+
+    .navigation {
+        width: 11.8rem;
+    }
+
+    .lipstick-text {
+        margin-top: 1.05rem;
+        margin-left: 0.5rem;
+        font-size: 2rem;
+    }
+    
+    h1 {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        margin-top: 0.4rem;
+    }
+    
+    .bigger-font {
+        font-size: 1.8rem;
+        text-indent: 1.6rem;
+    }
+
+    .leftmargin {
+        margin-left: 1rem;
+    }
+    
+    #map {
+        width: calc(100% - 1rem);
+        flex-grow: 1;
+    }
+    
+    .center {
+        display: inline-flex;
+        flex-direction: row;       
+    }
+    
+    .vlavo {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .vlavo .title-underline {
+        display: inline;
+    }
+    
+    .vlavo h1 + br {
+        display: none;
+    }
+    
+    .vpravo {
+        position: relative;
+        float: right;
+    }
+    
+    .formular {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formular .form-button {
+        margin-top: 0.8rem;
+        position: relative;
+        width: 100%;
+    }
+    
+    .formular textarea {
+        height: auto;
+    }
+
+    .thankyou_message {
+        position: absolute;
+        width: 33.8rem;
+        width: calc(100% - 1rem);    
+        background-color: rgba(255,255,255,0.8);
+        z-index: 1;
+    }
 }
