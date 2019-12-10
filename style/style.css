@@ -12,14 +12,13 @@ body {
 	color: black;
     background-color: black;
     font-size: 1.6rem;
-    width: 100%;
     min-width: 72rem;
     overflow: hidden;
 }
 
 .scrollbar-pink {
     position: relative;
-    overflow-y: auto;
+    overflow-y: scroll;
     scrollbar-color: transparent #F4E3EC;
     scrollbar-color: transparent linear-gradient(60deg, #D8C0D0, #D8C0D0 20%, #F4E3EC 30%, #F4E3EC 45%, #D8C0D0 55%, #D8C0D0 70%, #F4E3EC 80%, #F4E3EC);
     scrollbar-width: thin;
