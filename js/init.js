@@ -25,6 +25,17 @@ $(document).ready(function () {
         
     // nastav scrollbary
     OverlayScrollbars(document.querySelectorAll("body"), overlayScrollbarsOptions);
+    
+    // nastav menu stránky
+    var menuId = 0;
+    if (window.location && window.location.href && window.location.href.indexOf('?menu=') >= 0) {
+        var pageLocation = window.location.href;
+        menuId = pageLocation.indexOf('?menu=o-nas') >= 0 ? 0 : pageLocation.indexOf('?menu=sluzby') >= 0 ? 1 : pageLocation.indexOf('?menu=cennik') >= 0 ? 2 : pageLocation.indexOf('?menu=galeria') >= 0 ? 3 : pageLocation.indexOf('?menu=kontakt') >= 0 ? 4 : 0;
+
+    }
+    if (menuId > -1) {
+        otvorMenu(menuId);
+    }
 });
 
 
