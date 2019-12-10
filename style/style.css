@@ -16,31 +16,10 @@ body {
     overflow: hidden;
 }
 
-.scrollbar-pink {
-    position: relative;
-    overflow-y: scroll;
-    scrollbar-color: transparent #F4E3EC;
-    scrollbar-color: transparent linear-gradient(60deg, #D8C0D0, #D8C0D0 20%, #F4E3EC 30%, #F4E3EC 45%, #D8C0D0 55%, #D8C0D0 70%, #F4E3EC 80%, #F4E3EC);
-    scrollbar-width: thin;
-}
-.scrollbar-pink::-webkit-scrollbar-track
-{
-	background-color: transparent;
-	border-radius: 1rem;
-}
-
-.scrollbar-pink::-webkit-scrollbar
-{
-	background-color: transparent;
-	width: 1rem;
-}
-
-.scrollbar-pink::-webkit-scrollbar-thumb
-{
-	border-radius: 1rem;
-    background-color: #F4E3EC;	
-	background-image: -webkit-linear-gradient(60deg, #D8C0D0, #D8C0D0 20%, #F4E3EC 30%, #F4E3EC 45%, #D8C0D0 55%, #D8C0D0 70%, #F4E3EC 80%, #F4E3EC);
-    background-image: linear-gradient(60deg, #D8C0D0, #D8C0D0 20%, #F4E3EC 30%, #F4E3EC 45%, #D8C0D0 55%, #D8C0D0 70%, #F4E3EC 80%, #F4E3EC);
+.os-scrollbar-handle {
+    background-color: #F4E3EC !important;	
+	background-image: -webkit-linear-gradient(60deg, #D8C0D0, #D8C0D0 20%, #F4E3EC 30%, #F4E3EC 45%, #D8C0D0 55%, #D8C0D0 70%, #F4E3EC 80%, #F4E3EC) !important;
+    background-image: linear-gradient(60deg, #D8C0D0, #D8C0D0 20%, #F4E3EC 30%, #F4E3EC 45%, #D8C0D0 55%, #D8C0D0 70%, #F4E3EC 80%, #F4E3EC) !important;    
 }
 
 .page-container {
