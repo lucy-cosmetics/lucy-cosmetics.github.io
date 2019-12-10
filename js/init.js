@@ -1,3 +1,18 @@
+var overlayScrollbarsOptions = {
+    className       : "os-theme-dark",
+    resize          : "none",
+    sizeAutoCapable : true,
+    paddingAbsolute : true,
+    scrollbars : {
+        clickScrolling   : true,
+        autoHide         : "move",
+        autoHideDelay    : 800,
+        dragScrolling    : true,
+        touchSupport     : true,
+        snapHandle       : false
+    }
+};
+
 $(document).ready(function () {
     $('.menu-navigation').removeClass('hidden');
     
@@ -7,23 +22,11 @@ $(document).ready(function () {
     // nastav fotky v galerii
     nastavFotky();
     spustiSlideShow(false);
-    
+        
     // nastav scrollbary
-    OverlayScrollbars(document.querySelectorAll("body"), {
-        className       : "os-theme-dark",
-        resize          : "none",
-        sizeAutoCapable : true,
-        paddingAbsolute : true,
-        scrollbars : {
-            clickScrolling   : true,
-            autoHide         : "leave",
-            autoHideDelay    : 800,
-            dragScrolling    : true,
-            touchSupport     : true,
-            snapHandle       : false
-        }
-    });
+    OverlayScrollbars(document.querySelectorAll("body"), overlayScrollbarsOptions);
 });
+
 
 function otvorMenu(menuId) {
     var navigacia1 = document.getElementsByClassName("lipstick-text");
