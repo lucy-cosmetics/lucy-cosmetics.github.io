@@ -14,9 +14,6 @@ var overlayScrollbarsOptions = {
 };
 
 $(document).ready(function () {
-    // nastav fotky v galerii
-    nastavFotky();
-    spustiSlideShow(false);
             
     // nastav menu stránky
     var menuId = 0;
@@ -51,6 +48,10 @@ function otvorMenu(menuId) {
             
             if (menuId === 4) {
                 nastavMapu();
+            }            
+            else if (menuId === 3) {
+                // nastav fotky v galerii
+                nastavFotky();
             }
             
             spustiSlideShow(menuId === 3);
@@ -95,7 +96,12 @@ function nastavMapu() {
     mapa.invalidateSize();
 }
 
+var carouselInitialized = false;
 function nastavFotky() {
+    if (carouselInitialized) {
+        return;
+    }
+    
     var carousel = $('.carousel');
     if (carousel.length) {
         carousel.slick({
@@ -111,16 +117,21 @@ function nastavFotky() {
             variableWidth: true
         });
     }
+    carouselInitialized = true;
 }
 
 function spustiSlideShow(zapnut , skipRefresh) {
-        var carousel = $('.carousel');
-        if (!skipRefresh) {
-            $('.carousel')[0].slick.refresh();            
-        }
-        if (carousel.length && carousel[0].slick) {
-            zapnut ? carousel[0].slick.slickPlay() : carousel[0].slick.slickPause();        
-        }
+    if (!carouselInitialized) {
+        return;
+    }
+
+    var carousel = $('.carousel');
+    if (!skipRefresh) {
+        $('.carousel')[0].slick.refresh();            
+    }
+    if (carousel.length && carousel[0].slick) {
+        zapnut ? carousel[0].slick.slickPlay() : carousel[0].slick.slickPause();        
+    }
 }
 
 function zobrazFotku(source) {
