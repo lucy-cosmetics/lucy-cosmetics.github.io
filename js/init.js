@@ -89,7 +89,7 @@ function nastavMapu(skipInitialization) {
 
     if (!skipInitialization) {
         L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> | <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Koll%C3%A1rova+4439%2F11,+902+01+Pezinok/@48.285483,17.2690945,17z/data=!3m1!4b1!4m5!3m4!1s0x476c90b8cec261dd:0xa9375de7c9ee05e!8m2!3d48.285483!4d17.2712832">GoogleMaps</a>'
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(mapa);        
     
         L.marker( [markery.lat, markery.lng] )
