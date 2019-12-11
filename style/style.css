@@ -353,12 +353,13 @@ textarea {
     border-radius: 50%;
     border: 0.1rem solid #B7DCF4;
     background: url(../images/profil.webp) no-repeat center;
-    background-size: 25rem;
+    background-size: cover;
 }
 
 .profil ~ p {
     margin-right: 1rem;
 }
+
 
 .fullscreen {
     position: fixed;
@@ -487,5 +488,21 @@ textarea {
     
     .leftmargin.popis {
         margin-right: 1rem;
+    }
+    
+    .profil {
+        height: 22rem;
+        width: 22rem;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .profil {
+        height: 20rem;
+        width: 20rem;
+        background-size: cover;
+        margin: 0 auto 0.8rem auto;
+        float: unset;
     }
 }
