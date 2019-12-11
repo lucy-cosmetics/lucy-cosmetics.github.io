@@ -33,7 +33,7 @@ body {
 }
 
 .top-container {
-    background: url(../images/logo.jpg) no-repeat center;
+    background: url(../images/logo.webp) no-repeat center;
     background-size: cover;
     height: 44rem;
     width: 100%;
@@ -352,7 +352,7 @@ textarea {
     width: 25rem;
     border-radius: 50%;
     border: 0.1rem solid #B7DCF4;
-    background: url(../images/profil.jpg) no-repeat center;
+    background: url(../images/profil.webp) no-repeat center;
     background-size: 25rem;
 }
 
@@ -444,7 +444,7 @@ textarea {
     }
     
     .top-container {
-        background: url(../images/logo.jpg) no-repeat center;
+        background: url(../images/logo.webp) no-repeat center;
         background-size: cover;
         max-height: 44rem;
         height: 30rem; 
