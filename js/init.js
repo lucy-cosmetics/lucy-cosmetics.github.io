@@ -14,18 +14,10 @@ var overlayScrollbarsOptions = {
 };
 
 $(document).ready(function () {
-    $('.menu-navigation').removeClass('hidden');
-    
-    // nastav mapu v kontaktoch
-    nastavMapu();
-    
     // nastav fotky v galerii
     nastavFotky();
     spustiSlideShow(false);
-        
-    // nastav scrollbary
-    OverlayScrollbars(document.querySelectorAll("body"), overlayScrollbarsOptions);
-    
+            
     // nastav menu stránky
     var menuId = 0;
     if (window.location && window.location.href && window.location.href.indexOf('?menu=') >= 0) {
@@ -36,6 +28,9 @@ $(document).ready(function () {
     if (menuId > -1) {
         otvorMenu(menuId);
     }
+    
+    // nastav scrollbary
+    OverlayScrollbars(document.querySelectorAll("body"), overlayScrollbarsOptions);
 });
 
 
@@ -55,7 +50,7 @@ function otvorMenu(menuId) {
             }
             
             if (menuId === 4) {
-                nastavMapu(true);
+                nastavMapu();
             }
             
             spustiSlideShow(menuId === 3);
@@ -71,8 +66,8 @@ function preklopPopis(titulokPopisu) {
 }
 
 var mapa = null;
-
-function nastavMapu(skipInitialization) {
+var skipMapInitialization = false;
+function nastavMapu() {
     
     if (!mapa) {
         mapa = L.map('map');       
@@ -87,7 +82,7 @@ function nastavMapu(skipInitialization) {
 
     mapa.setView([markery.lat, markery.lng], markery.zoom);
 
-    if (!skipInitialization) {
+    if (!skipMapInitialization) {
         L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(mapa);        
@@ -95,6 +90,7 @@ function nastavMapu(skipInitialization) {
         L.marker( [markery.lat, markery.lng] )
           .bindPopup(markery.name)
           .addTo( mapa );
+        skipMapInitialization = true;
     }
     mapa.invalidateSize();
 }
