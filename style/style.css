@@ -14,6 +14,8 @@ body {
     font-size: 1.6rem;
     min-width: 72rem;
     overflow: hidden;
+    background: url(../images/lc-vzor.png) repeat center;
+    background-size: 10rem 10rem;
 }
 
 .os-scrollbar-handle {
@@ -27,7 +29,7 @@ body {
     width: 68rem;
     min-width: 68rem;
     margin: 2rem auto;
-    border: 0.2rem solid black;
+    border: 0.2rem solid deeppink;
     border-radius: 1rem;
     position: relative;
 }
