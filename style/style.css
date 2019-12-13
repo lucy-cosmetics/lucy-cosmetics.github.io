@@ -42,6 +42,16 @@ body {
     position: relative;
 }
 
+.top-container-logo {
+    background: url(../images/lc-logo.gif) no-repeat center;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: relative;    
+}
+
 .menu-navigation {
     float: left;
     position: absolute;
@@ -452,6 +462,11 @@ textarea {
         border-top-right-radius: 1rem;
         position: relative;
     }
+    
+    .top-container-logo {
+        max-height: 44rem;
+    }
+
     
     .menu-navigation {
         width: 11.8rem;
