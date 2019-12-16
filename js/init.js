@@ -136,11 +136,11 @@ function spustiSlideShow(zapnut , skipRefresh) {
 
 function zobrazFotku(source) {
     var fullscreen = $('.fullscreen');
-    if (fullscreen && fullscreen.length && source) {
+    if (fullscreen && fullscreen.length && source && source.hasAttribute("data-src")) {
         spustiSlideShow(false, true);
         var zvacsenyObrazok = fullscreen.find('img');
         if (zvacsenyObrazok && zvacsenyObrazok.length) {
-            $(zvacsenyObrazok).attr('src', source.src);
+            $(zvacsenyObrazok).attr('src', source.getAttribute("data-src"));
         }
         fullscreen.removeClass('hidden');
         $(':focus').blur();
