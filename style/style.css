@@ -173,68 +173,6 @@ body {
     color: inherit;
 }
 
-.gallery1, .gallery1 .carousel-image-full {
-    background-image: url(../images/galeria/1.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.gallery2, .gallery2 .carousel-image-full {
-    background-image: url(../images/galeria/2.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.gallery3, .gallery3 .carousel-image-full {
-    background-image: url(../images/galeria/3.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.gallery4, .gallery4 .carousel-image-full {
-    background-image: url(../images/galeria/4.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.gallery5, .gallery5 .carousel-image-full {
-    background-image: url(../images/galeria/5.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.gallery6, .gallery6 .carousel-image-full {
-    background-image: url(../images/galeria/6.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.gallery7, .gallery7 .carousel-image-full {
-    background-image: url(../images/galeria/7.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.carousel-image-background {
-    height: 35rem;
-    width: 50rem;
-    background-size: cover;
-}
-
-.carousel-image-background-cover {
-    height: inherit;
-    width: inherit;
-    background-color: rgba(245,245,245, 0.6);
-    background: linear-gradient(rgba(245, 245, 245, 0.8),rgba(245, 245, 245, 0.5) 25%, 75%, rgba(245, 245, 245, 0.8));
-    background-size: 100% 100%;
-}
-
-.carousel-image-full {
-    height: inherit;
-    width: inherit;
-    background-size: contain;    
-}
-
 .vlavo {
     width: 50%;
     padding-left: 1rem;
@@ -245,10 +183,6 @@ body {
 
 .vlavo .title-underline {
     display: inline;
-}
-
-.vlavo h1 + br {
-    display: none;
 }
 
 .vpravo {
@@ -366,6 +300,48 @@ textarea {
     margin-right: 1rem;
 }
 
+.gallery1 {
+    background-image: url(../images/galeria/1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery2 {
+    background-image: url(../images/galeria/2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery3 {
+    background-image: url(../images/galeria/3.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery4 {
+    background-image: url(../images/galeria/4.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery5 {
+    background-image: url(../images/galeria/5.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery6 {
+    background-image: url(../images/galeria/6.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery7 {
+    background-image: url(../images/galeria/7.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .carousel {
     padding: 0 1rem;
 }
@@ -398,14 +374,12 @@ textarea {
 }
 
 .carousel .carousel-image img {
-    opacity: 0.4;
-    max-height: 35rem;
-    max-width: 40rem;
+    opacity: 0.8;
     cursor: pointer;
 }
 
 .carousel .carousel-image.slick-current img {
-    opacity: 1;    
+    opacity: 1; 
 }
 
 .carousel-caption {
@@ -420,6 +394,34 @@ textarea {
     font-style: italic;
     padding: 0.2rem 0.5rem;
     background-color: rgba(255,255,255,0.5)
+}
+
+.carousel-image-background {
+    height: 35rem;
+    max-width: 75vw;
+    background-size: cover;
+    position: relative;
+}
+
+.carousel-image-background-cover {
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-color: rgb(0,0,0);
+    background: linear-gradient(rgba(40, 40, 40, 0.6),rgba(40, 40, 40, 0.3) 25%, 75%, rgba(40, 40, 40, 0.6));
+    display: flex;
+    position: relative;
+}
+
+.carousel .carousel-image.slick-current .carousel-image-background-cover {
+    background-color: rgba(245,245,245, 0.6);
+    background: linear-gradient(rgba(245, 245, 245, 0.6),rgba(245, 245, 245, 0.3) 25%, 75%, rgba(245, 245, 245, 0.6));
+}
+
+.carousel-image-full {
+    max-width: 80%;
+    max-height: 90%;
+    margin: auto;
 }
 
 .titulok-popisu, .titulok-popisu svg, .titulok-popisu p {
@@ -467,7 +469,7 @@ textarea {
     left: 0rem;
     width: 100%;
     height: 100%;
-    background-color: #FFDCDC;
+    background-color: rgba(244,227,236, 0.8);
     z-index: 5;
     display: flex;
     cursor: pointer;
@@ -478,6 +480,10 @@ textarea {
     padding: 1rem 0rem;
     margin: auto;
     max-width: calc(100% - 2rem);
+}
+
+.fullscreen .carousel-caption span {
+    background-color: white; 
 }
 
 .prazdne-odrazky {
@@ -558,13 +564,7 @@ textarea {
     .lipstick-text {
         font-size: 2rem;
     }
-    
-    h1 {
-        font-size: 2.4rem;
-        line-height: 2.4rem;
-        margin-top: 0.4rem;
-    }
-    
+        
     .bigger-font {
         font-size: 1.8rem;
         text-indent: 1.6rem;
@@ -583,6 +583,10 @@ textarea {
         width: 22rem;
         background-size: cover;
     }
+    
+    .carousel-image-background {
+        height: 30rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -592,6 +596,10 @@ textarea {
     
     .menu-navigation ul {
         justify-content: space-between;
+    }
+    
+    .carousel-image-background {
+        height: 25rem;
     }
 }
 
@@ -608,7 +616,6 @@ textarea {
         justify-content: space-around;
     }
 
-    
     .lipstick-text {
         margin: 0 0.8rem 0.8rem 0.8rem;
     }
@@ -619,5 +626,9 @@ textarea {
 
     .top-container-logo {
         background-size: 140% auto;
+    }
+    
+    .carousel-image-background {
+        height: 22rem;
     }
 }

@@ -110,7 +110,7 @@ function nastavFotky() {
             slidesToShow: 1,
             initialSlide: 0,
             autoplay: false,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 4000,
             adaptiveHeight: true,
             dots: true,
             infinite: true,
