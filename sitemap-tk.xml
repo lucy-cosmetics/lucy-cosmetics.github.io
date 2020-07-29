@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
@@ -16,12 +12,52 @@
   <lastmod>2020-07-29T09:06:41+00:00</lastmod>
 </url>
 <url>
+  <loc>https://lucy-cosmetics.tk/?menu=onas</loc>
+  <lastmod>2020-07-29T09:06:41+00:00</lastmod>
+</url>
+<url>
+  <loc>https://lucy-cosmetics.tk/?menu=sluzby</loc>
+  <lastmod>2020-07-29T09:06:41+00:00</lastmod>
+</url>
+<url>
+  <loc>https://lucy-cosmetics.tk/?menu=cennik</loc>
+  <lastmod>2020-07-29T09:06:41+00:00</lastmod>
+</url>
+<url>
+  <loc>https://lucy-cosmetics.tk/?menu=galeria</loc>
+  <lastmod>2020-07-29T09:06:41+00:00</lastmod>
+</url>
+<url>
+  <loc>https://lucy-cosmetics.tk/?menu=kontakt</loc>
+  <lastmod>2020-07-29T09:06:41+00:00</lastmod>
+</url>
+<url>
     <loc>https://lucy-cosmetics.github.io/googledb411899abefc296.html</loc>
     <lastmod>2020-07-29T09:06:40+00:00</lastmod>
 </url>
 <url>
     <loc>https://lucy-cosmetics.github.io/</loc>
     <lastmod>2020-07-29T09:06:41+00:00</lastmod>
+</url>
+<url>
+  <loc>https://lucy-cosmetics.github.io/?menu=onas</loc>
+  <lastmod>2020-07-29T09:06:41+00:00</lastmod>
+</url>
+<url>
+  <loc>https://lucy-cosmetics.github.io/?menu=sluzby</loc>
+  <lastmod>2020-07-29T09:06:41+00:00</lastmod>
+</url>
+<url>
+  <loc>https://lucy-cosmetics.github.io/?menu=cennik</loc>
+  <lastmod>2020-07-29T09:06:41+00:00</lastmod>
+</url>
+<url>
+  <loc>https://lucy-cosmetics.github.io/?menu=galeria</loc>
+  <lastmod>2020-07-29T09:06:41+00:00</lastmod>
+</url>
+<url>
+  <loc>https://lucy-cosmetics.github.io/?menu=kontakt</loc>
+  <lastmod>2020-07-29T09:06:41+00:00</lastmod>
 </url>
 
 </urlset>
