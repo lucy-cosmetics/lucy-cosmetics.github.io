@@ -201,6 +201,15 @@ body {
     flex-direction: row; 
 }
 
+.center-align-container {
+    display: flex;
+}
+
+.center-align {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .bottom-space {
     height: 1.6rem;
 }
