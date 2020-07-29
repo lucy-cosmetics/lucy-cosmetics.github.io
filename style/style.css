@@ -18,6 +18,12 @@ body {
     background-size: 10rem 10rem;
 }
 
+.body-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .os-scrollbar-handle {
     background-color: #F4E3EC !important;	
 	background-image: -webkit-linear-gradient(60deg, #D8C0D0, #D8C0D0 20%, #F4E3EC 30%, #F4E3EC 45%, #D8C0D0 55%, #D8C0D0 70%, #F4E3EC 80%, #F4E3EC) !important;
@@ -208,6 +214,14 @@ body {
 .center-align {
     margin-left: auto;
     margin-right: auto;
+}
+
+.copyright {
+    width: 100%;
+    margin: auto auto 0 auto;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0 0.8rem;
 }
 
 .bottom-space {
